@@ -1,0 +1,10 @@
+<%-- OWNER: Member 5 (Delivery Management). Shows the rider of the current order "o" --%>
+<c:set var="dv" value="${deliveryMap[o.id]}"/>
+<c:if test="${not empty dv}">
+  <div class="order-info-line" style="background: var(--bg-subtle); padding: 10px 14px; border-radius: var(--radius-sm); margin-top: 10px;">
+    <span>🚴 Assigned Rider: <strong><c:out value="${dv.personName}"/></strong> &bull; <c:out value="${dv.personPhone}"/> &bull;
+      <span class="status ${dv.status == 'Delivered' ? 'status-delivered' : 'status-on-the-way'}"><c:out value="${dv.status}"/></span>
+      <c:if test="${dv.status == 'Delivered'}"> &bull; Delivered at <c:out value="${dv.deliveredAt}"/></c:if>
+    </span>
+  </div>
+</c:if>

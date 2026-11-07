@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee" version="6.0">
+  <!-- Folder where foods.txt is saved. Remove this block to use  <user home>/quickbite-data  -->
+  <!--
+  <context-param><param-name>dataDir</param-name><param-value>C:/quickbite-data</param-value></context-param>
+  -->
+  <!-- Read all JSP pages AND fragments (.jspf) as UTF-8, so emoji in header.jspf show correctly -->
+  <jsp-config>
+    <jsp-property-group>
+      <url-pattern>*.jsp</url-pattern>
+      <url-pattern>*.jspf</url-pattern>
+      <page-encoding>UTF-8</page-encoding>
+    </jsp-property-group>
+  </jsp-config>
+  <welcome-file-list><welcome-file>index.jsp</welcome-file></welcome-file-list>
+</web-app>

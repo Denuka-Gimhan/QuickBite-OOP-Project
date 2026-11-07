@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Users Management Styles (users.jsp) - Member 1
+   ========================================================================== */
+.user-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-mini-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.95rem;
+  font-family: var(--font-display);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+}

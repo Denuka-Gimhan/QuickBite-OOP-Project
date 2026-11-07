@@ -1,0 +1,39 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>QuickBite</h3>
+      <p>Delivering hot, delicious food right to your doorstep. Authentic Sri Lankan flavours, burgers, desserts and more prepared fresh every day.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="${pageContext.request.contextPath}/foods">Browse Menu</a></li>
+        <li><a href="${pageContext.request.contextPath}/cart">View Cart</a></li>
+        <li><a href="${pageContext.request.contextPath}/orders">Order Tracking</a></li>
+        <li><a href="${pageContext.request.contextPath}/users">Account Login</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <ul>
+        <li><a href="${pageContext.request.contextPath}/foods?cat=Traditional">Traditional</a></li>
+        <li><a href="${pageContext.request.contextPath}/foods?cat=Fast+Food">Fast Food</a></li>
+        <li><a href="${pageContext.request.contextPath}/foods?cat=Beverages">Beverages</a></li>
+        <li><a href="${pageContext.request.contextPath}/foods?cat=Desserts">Desserts</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Service Hours</h4>
+      <ul>
+        <li><span style="color: var(--text-main); font-weight:600;">Mon - Fri:</span> 08:00 AM - 11:00 PM</li>
+        <li><span style="color: var(--text-main); font-weight:600;">Sat - Sun:</span> 08:00 AM - Midnight</li>
+        <li><span style="color: var(--text-main); font-weight:600;">Hotline:</span> +94 11 234 5678</li>
+        <li><span style="color: var(--text-main); font-weight:600;">Address:</span> Colombo &amp; Negombo</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 QuickBite Online Food Delivery. All rights reserved.</p>
+    <p>Built with Servlets, JSP &amp; Vanilla JavaScript.</p>
+  </div>
+</footer>

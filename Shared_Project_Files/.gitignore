@@ -1,0 +1,10 @@
+target/
+.idea/
+*.iml
+out/
+*.class
+*.log
+.DS_Store
+# data files live in <user home>/quickbite-data, never commit them
+quickbite-data/
+*.txt.tmp
