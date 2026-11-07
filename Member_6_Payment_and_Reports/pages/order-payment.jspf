@@ -1,8 +1,0 @@
-<%-- OWNER: Member 6 (Payment, Billing and Reports). Payment line + link to invoice --%>
-<c:set var="pay" value="${paymentMap[o.id]}"/>
-<div class="order-info-line" style="background: var(--bg-subtle); padding: 10px 14px; border-radius: var(--radius-sm); margin-top: 8px;">
-  <span>💳 Payment Method: <strong><c:out value="${o.payment}"/></strong> &bull;
-    Status: <span class="status ${empty pay ? 'pay-pending' : pay.statusClass}"><c:out value="${empty pay ? 'Pending' : pay.status}"/></span>
-    &bull; <a href="${ctx}/billing?orderId=${o.id}" class="btn-sm" style="margin-left: 8px; font-weight: 700;">📄 View Invoice</a>
-  </span>
-</div>
