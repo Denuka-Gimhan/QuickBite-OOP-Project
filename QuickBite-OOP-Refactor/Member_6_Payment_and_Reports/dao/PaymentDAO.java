@@ -63,7 +63,7 @@ public class PaymentDAO {
         return false;
     }
 
-    /** Order delivered -> "Paid"; ordenr cancellked -> "Cance lled" (or "Refunded" if it hvad been paid). */
+    /** Order delivered -> "Paid"; ordenr cancellkemd -> "Cance lled" (or "Refunded" if it hvad been paid). */
     public synchronized void onOrderStatus(int orderId, String orderStatus) throws IOException {
         Payment p = getByOrder(orderId);
         if (p == null) return;
