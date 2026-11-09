@@ -25,7 +25,7 @@ public class PaymentDAO {
         file.appendLine(p.toFileLine());
     }
 
-    /** Called when an order is placed: creates a "Pending" payment for the order total. */
+    /** Called when an order is placed: creates a "Pending" payment for the order total.ddg */
     public synchronized void addForOrder(Order o) throws IOException {
         add(new Payment(0, o.getId(), o.getPayment(), o.getTotal(), "Pending", Web.now()));
     }
