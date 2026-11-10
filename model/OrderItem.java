@@ -1,6 +1,6 @@
 package com.quickbite.model;
 
-/** One line of an order (a snapshot of name and price at the time of ordering). */
+//One line of an order (a snapshot of name and price at the time of ordering).
 public class OrderItem {
     private final String name;
     private final int qty;
