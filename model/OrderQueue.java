@@ -60,7 +60,7 @@ public class OrderQueue {
 
     public synchronized boolean contains(int orderId) { return position(orderId) > 0; }
 
-    /** 1 = next to be prepared, 0 = not in the queue. */
+    // 1 = next to be prepared, 0 = not in the queue.
     public synchronized int position(int orderId) {
         int pos = 1;
         for (Node cur = head; cur != null; cur = cur.next, pos++) if (cur.orderId == orderId) return pos;
