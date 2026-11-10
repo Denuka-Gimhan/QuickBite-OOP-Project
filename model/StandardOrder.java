@@ -2,7 +2,7 @@ package com.quickbite.model;
 
 import java.util.List;
 
-/** Standard delivery: Rs. 250, free for orders of Rs. 5,000 or more. */
+// Standard delivery: Rs. 250, free for orders of Rs. 5,000 or more.
 public class StandardOrder extends Order {
     public StandardOrder(int id, int userId, String username, String status, String date,
                          String address, String phone, String payment, List<OrderItem> items) {
