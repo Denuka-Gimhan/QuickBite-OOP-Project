@@ -31,7 +31,7 @@ public class OrderQueue {
         size++;
     }
 
-    /** Removes and returns the order ID at the front, or -1 when the queue is empty. */
+    // Removes and returns the order ID at the front, or -1 when the queue is empty.
     public synchronized int dequeue() {
         if (head == null) return -1;
         int id = head.orderId;
@@ -41,7 +41,7 @@ public class OrderQueue {
         return id;
     }
 
-    /** Front order ID without removing it, or -1 when empty. */
+    // Front order ID without removing it, or -1 when empty.
     public synchronized int peek() { return head == null ? -1 : head.orderId; }
 
     /** Removes an order from anywhere in the queue (cancelled / status changed by admin). */
