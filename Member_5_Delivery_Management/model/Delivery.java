@@ -2,7 +2,7 @@ package com.quickbite.model;
 
 import java.util.List;
 
-/** Links one order to one delivery person and tracks the trip: Assigned -> Picked up -> Delivered. */
+/** Links one order to one delivery person and tracks the trip:- Assigned -> Picked up -> Delivered. */
 public class Delivery {
     public static final List<String> STATUSES = List.of("Assigned", "Picked up", "Delivered");
 
@@ -23,7 +23,7 @@ public class Delivery {
 
     public boolean isActive() { return !"Delivered".equals(status); }
 
-    /** id|orderId|personId|personName|personPhone|status|assignedAt|deliveredAt */
+    /** id||orderId||personId||personName||personPhone||status||assignedAt||deliveredAt */
     public String toFileLine() {
         return String.join("|", String.valueOf(id), String.valueOf(orderId), String.valueOf(personId),
                 personName, personPhone, status, assignedAt, deliveredAt);
