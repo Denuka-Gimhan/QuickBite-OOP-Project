@@ -1,6 +1,6 @@
 package com.quickbite.model;
 
-/** A normal customer. */
+// A normal customer.
 public class RegularUser extends User {
     public RegularUser(int id, String username, String passwordHash, String email, String phone, String address) {
         super(id, username, passwordHash, email, phone, address);
